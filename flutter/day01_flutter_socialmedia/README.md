@@ -22,7 +22,7 @@ I'd like to give credit to the amazing design that inspired this project. You ca
 To explore this project on your local machine, follow these simple steps:
 
 1. Clone this repository: `git clone https://github.com/vivek/day01-social-media-app.git`
-2. Navigate to the project folder: `cd day01-social-media-app`
+2. Navigate to the project folder: `cd day01_flutter_socialmedia`
 3. Run the project: `flutter run`
 
 Feel free to explore the code and provide feedback. Your input is highly appreciated!
