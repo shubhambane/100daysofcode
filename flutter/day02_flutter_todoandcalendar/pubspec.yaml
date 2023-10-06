@@ -1,4 +1,4 @@
-name: day01
+name: day02_flutter_todoandcalendar
 description: Day Two of my 100daysofcode challenge.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -37,9 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   device_preview: ^1.1.0
   google_fonts: ^6.1.0
-  feather_icons: ^1.2.0
   material_symbols_icons: ^4.2668.0
-  flutter_staggered_grid_view: ^0.7.0
+  badges: ^3.1.2
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +63,4 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/media/
-
-  
+    - assets/images/
