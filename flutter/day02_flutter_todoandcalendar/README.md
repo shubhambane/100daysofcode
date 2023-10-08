@@ -1,10 +1,10 @@
-# Day 01: Social Media App
+# Day 02: Flutter Todo and Calender App
 
-![App Preview](app-preview.png)
+![App Preview](assets/gitImages/day02.png)
 
 ## Project Overview
 
-Welcome to Day 01 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to life an exciting Social Media App. This project is inspired by a fantastic design from [Dribbble](https://dribbble.com). I want to extend my heartfelt thanks to the brilliant designer for the inspiration!
+Welcome to Day 02 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to life an exciting Social Media App. This project is inspired by a fantastic design from [Dribbble](https://dribbble.com). I want to extend my heartfelt thanks to the brilliant designer for the inspiration!
 
 ### App Highlights
 

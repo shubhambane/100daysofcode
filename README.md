@@ -1,6 +1,6 @@
 # Shubham's 100 Days of Code Challenge
 
-![Banner](banner.jpg)
+![Banner](assets/100daysofcode_shubhambane.png)
 
 ## Welcome to My Coding Journey!
 
@@ -25,10 +25,6 @@ I'll be posting updates on LinkedIn, so be sure to follow me there for daily pro
 [Check out the code](https://github.com/shubhambane/100daysofcode)
 
 ---
-
-<p align="center">
-  <img src="code.png" alt="Code Image">
-</p>
 
 [![GitHub Stargazers](https://img.shields.io/github/stars/shubhambane/100daysofcode)](https://github.com/shubhambane/100daysofcode/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/shubhambane/100daysofcode)](https://github.com/shubhambane/100daysofcode/network/members)

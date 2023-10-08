@@ -1,6 +1,6 @@
 # Day 01: Social Media App
 
-![App Preview](app-preview.png)
+![App Preview](assets/gitImages/day01.png)
 
 ## Project Overview
 
