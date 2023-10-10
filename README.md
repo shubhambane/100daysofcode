@@ -24,6 +24,11 @@ I'll be posting updates on LinkedIn, so be sure to follow me there for daily pro
 <br>
 [Check out the code](https://github.com/shubhambane/100daysofcode)
 
+
+### LICENSE
+[MIT License](LICENSE)
+
+
 ---
 
 [![GitHub Stargazers](https://img.shields.io/github/stars/shubhambane/100daysofcode)](https://github.com/shubhambane/100daysofcode/stargazers)
