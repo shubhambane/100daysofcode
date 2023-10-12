@@ -1,3 +1,4 @@
+import 'package:day04_flutter_fitnessapp/screens/start_workout_view.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeView(),
-        // '/chat': (context) => const ChatView(),
+        '/start_workout': (context) => const StartWorkoutView(),
       },
       theme: ThemeData(
         useMaterial3: true,
