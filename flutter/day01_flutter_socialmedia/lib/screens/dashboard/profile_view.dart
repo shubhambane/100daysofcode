@@ -147,23 +147,23 @@ class _ProfileViewState extends State<ProfileView>
                 unselectedLabelColor: Colors.grey.shade500,
                 labelColor: Colors.black,
                 controller: _tabController,
-                tabs: [
-                  const Tab(
+                tabs: const [
+                  Tab(
                     icon: Icon(
                       Symbols.grid_view_sharp,
                     ),
                   ),
-                  const Tab(
+                  Tab(
                     icon: Icon(
                       Symbols.videocam_sharp,
                     ),
                   ),
-                  const Tab(
+                  Tab(
                     icon: Icon(
                       Symbols.favorite_sharp,
                     ),
                   ),
-                  const Tab(
+                  Tab(
                     icon: Icon(
                       Symbols.bookmark_sharp,
                     ),

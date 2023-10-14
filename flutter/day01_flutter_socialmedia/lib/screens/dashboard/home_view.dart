@@ -267,5 +267,3 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
     ),
   ];
 }
-
-enum _SelectedTab { home, favorite, search, person }
