@@ -38,6 +38,7 @@ dependencies:
   google_fonts: ^6.1.0
   device_preview: ^1.1.0
   material_symbols_icons: ^4.2671.0
+  
 
 dev_dependencies:
   flutter_test:
