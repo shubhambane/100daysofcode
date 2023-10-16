@@ -1,10 +1,10 @@
-# Day 04: Flutter Fitness App
+# Day 05: Flutter Mobile Website
 
-![App Preview](assets/gitImages/day04.png)
+![App Preview](assets/gitImages/day05.png)
 
 ## Project Overview
 
-Welcome to Day 04 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to life an exciting Social Media App. This project is inspired by a fantastic design from [Dribbble](https://dribbble.com). I want to extend my heartfelt thanks to the brilliant designer for the inspiration!
+Welcome to Day 05 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to life an exciting Social Media App. This project is inspired by a fantastic design from [Dribbble](https://dribbble.com). I want to extend my heartfelt thanks to the brilliant designer for the inspiration!
 
 ### App Highlights
 
@@ -15,14 +15,14 @@ Welcome to Day 04 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to li
 
 ### Credits
 
-I'd like to give credit to the amazing design that inspired this project. You can check out the original Dribbble design [here](https://dribbble.com/shots/22765821-Fitness-Mobile-iOS-App).
+I'd like to give credit to the amazing design that inspired this project. You can check out the original Dribbble design [here](https://dribbble.com/shots/22780213-Mobile-Website-Concept).
 
 ### How to Run
 
 To explore this project on your local machine, follow these simple steps:
 
 1. Clone this repository: `git clone https://github.com/shubhambane/100daysofcode.git`
-2. Navigate to the project folder: `cd flutter/day04_flutter_fitnessapp`
+2. Navigate to the project folder: `cd flutter/day05_flutter_mobilewebsite`
 3. Get packages: `flutter pub get`
 3. Run the project: `flutter run`
 
