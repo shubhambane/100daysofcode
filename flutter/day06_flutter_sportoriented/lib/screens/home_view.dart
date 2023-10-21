@@ -103,20 +103,20 @@ class _HomeViewState extends State<HomeView> {
             _currentIndex = index;
           });
         },
-        items: [
-          const BottomNavigationBarItem(
+        items: const [
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.dynamic_feed_outlined,
             ),
             label: 'Feed',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.signal_cellular_alt,
             ),
             label: 'Progess',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: CircleAvatar(
               radius: 24,
               backgroundColor: Color(0xFFE14385),
@@ -131,11 +131,11 @@ class _HomeViewState extends State<HomeView> {
             ),
             label: '',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.shopping_bag_outlined),
             label: 'Store',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.more_horiz_outlined),
             label: 'More',
           ),
