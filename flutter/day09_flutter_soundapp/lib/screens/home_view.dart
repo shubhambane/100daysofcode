@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -13,12 +11,14 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFEFEFE),
+      backgroundColor: const Color(0xFFFEFEFE),
       appBar: AppBar(
+        backgroundColor: const Color(0xFFFEFEFE),
+        elevation: 0,
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.settings,
             ),
           ),
@@ -29,20 +29,18 @@ class _HomeViewState extends State<HomeView> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Mezo Sound',
+            const Text(
+              'Audio Sound',
               style: TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 20),
-            Text(
-              'My Devices',
-              // style: TextStyle(
-              //   fontSize: 36,
-              //   fontWeight: FontWeight.bold,
-              // ),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 18.0),
+              child: Text(
+                'My Devices',
+              ),
             ),
             MyDevices(),
           ],
@@ -57,50 +55,118 @@ class MyDevices extends StatelessWidget {
     super.key,
   });
 
-  List<Map<String, dynamic>> deviceList = [
+  final List<Map<String, dynamic>> deviceList = [
     {
       'isConnected': true,
-      'deviceName': 'Device 1',
-      'deviceThumbnail':
-          'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'deviceName': 'Audio Q2',
+      'deviceThumbnail': 'assets/media/headphones.png',
     },
     {
       'isConnected': false,
-      'deviceName': 'Device 2',
-      'deviceThumbnail':
-          'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'deviceName': 'Audio P3',
+      'deviceThumbnail': 'assets/media/tws.png',
     },
   ];
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: ListView.builder(
-        shrinkWrap: true,
-        itemCount: deviceList.length,
-        itemBuilder: (context, index) {
-          return Container(
-            height: 200,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              // color: isConnected ? Color(0xFFF0F5F5) : Color(0xFFF3F3F3),
-              color: deviceList[index]['isConnected']
-                  ? Color(0xFFF0F5F5)
-                  : Color(0xFFF3F3F3),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Row(
-              children: [
-                Image.network(
-                  deviceList[index]['deviceThumbnail'],
-                  width: 100,
-                  height: 100,
-                  fit: BoxFit.cover,
+      child: Column(
+        children: [
+          ListView.builder(
+            padding: EdgeInsets.zero,
+            shrinkWrap: true,
+            itemCount: deviceList.length,
+            itemBuilder: (context, index) {
+              return GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/device_view');
+                },
+                child: Container(
+                  margin: const EdgeInsets.only(bottom: 18),
+                  height: 200,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: deviceList[index]['isConnected']
+                        ? const Color(0xFFF0F5F5)
+                        : const Color(0xFFF3F3F3),
+                    borderRadius: BorderRadius.circular(36),
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        deviceList[index]['deviceThumbnail'],
+                        width: 150,
+                        height: 150,
+                        fit: BoxFit.cover,
+                      ),
+                      RichText(
+                        text: TextSpan(
+                          children: [
+                            TextSpan(
+                              text: '${deviceList[index]['deviceName']}\n',
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                                color: Colors.black,
+                              ),
+                            ),
+                            const WidgetSpan(
+                              child: SizedBox(height: 25),
+                            ),
+                            WidgetSpan(
+                              child: deviceList[index]['isConnected']
+                                  ? const Padding(
+                                      padding: EdgeInsets.only(right: 5.0),
+                                      child: Icon(
+                                        Icons.check_circle,
+                                        color: Colors.green,
+                                        size: 14,
+                                      ),
+                                    )
+                                  : const SizedBox(),
+                            ),
+                            TextSpan(
+                              text: deviceList[index]['isConnected']
+                                  ? 'Connected'
+                                  : 'Disconnected',
+                              style: const TextStyle(
+                                color: Colors.black54,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
-              ],
+              );
+            },
+          ),
+          Container(
+            width: double.infinity,
+            height: 60,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(36),
+              color: const Color(0xFFF3F3F3),
             ),
-          );
-        },
+            child: TextButton.icon(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.add,
+                color: Colors.black,
+              ),
+              label: const Text(
+                'Add Devices',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

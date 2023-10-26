@@ -1,4 +1,4 @@
-# Day 09: Flutter Mobile Website
+# Day 09: Flutter SoundApp
 
 ![App Preview](assets/gitImages/day09.png)
 
