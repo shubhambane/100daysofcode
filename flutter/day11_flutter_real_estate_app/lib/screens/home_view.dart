@@ -1,8 +1,7 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/symbols.dart';
 
+import '../components/home_property.dart';
 import '../components/home_tag.dart';
 
 class HomeView extends StatefulWidget {
@@ -16,10 +15,12 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         actions: [
           Container(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
@@ -28,53 +29,69 @@ class _HomeViewState extends State<HomeView> {
               ),
               borderRadius: BorderRadius.circular(50),
             ),
-            child: Icon(
+            child: const Icon(
               Symbols.steppers,
             ),
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Find\nApartments',
-              style: TextStyle(
-                fontSize: 34,
-                fontWeight: FontWeight.bold,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Find\nApartments',
+                style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            Container(
-              margin: EdgeInsets.fromLTRB(0, 20, 0, 10),
-              height: 60,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  Container(
-                    height: 60,
-                    width: 60,
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(
-                        color: Colors.black26,
-                        width: 1,
+              Container(
+                margin: const EdgeInsets.fromLTRB(0, 20, 0, 10),
+                height: 60,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      height: 60,
+                      width: 60,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.black26,
+                          width: 1,
+                        ),
+                        borderRadius: BorderRadius.circular(50),
                       ),
-                      borderRadius: BorderRadius.circular(50),
+                      child: const Icon(
+                        Symbols.bookmark_border_sharp,
+                      ),
                     ),
-                    child: Icon(
-                      Symbols.steppers,
-                    ),
-                  ),
-                  HomeTag(isActive: true, tagText: 'Whole List'),
-                  HomeTag(isActive: false, tagText: 'Site Visits'),
-                  HomeTag(isActive: false, tagText: 'Shubham'),
-                ],
+                    const HomeTag(isActive: true, tagText: 'Whole List'),
+                    const HomeTag(isActive: false, tagText: 'Site Visits'),
+                    const HomeTag(isActive: false, tagText: 'Shubham'),
+                  ],
+                ),
               ),
-            ),
-          ],
+              const HomeProperty(
+                propertyName: 'Mixrr\nApartments',
+                propertyImage:
+                    'https://images.unsplash.com/photo-1557863577-c6d4950527fc?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                propertyDiscount: '9',
+                propertyPrice: '\$100',
+              ),
+              const HomeProperty(
+                propertyName: 'Shubham\nApartments',
+                propertyImage:
+                    'https://images.unsplash.com/photo-1512850183-6d7990f42385?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                propertyDiscount: '9',
+                propertyPrice: '\$100',
+              ),
+            ],
+          ),
         ),
       ),
     );

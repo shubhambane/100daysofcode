@@ -33,7 +33,7 @@ class HomeTag extends StatelessWidget {
         child: Text(
           tagText,
           style: TextStyle(
-            fontWeight: FontWeight.w500,
+            fontWeight: isActive ? FontWeight.bold : FontWeight.w500,
             fontSize: 16,
           ),
         ),
