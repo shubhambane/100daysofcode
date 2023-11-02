@@ -12,16 +12,20 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
+      extendBodyBehindAppBar: true,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 12),
         child: Column(
           children: [
+            SizedBox(height: 50),
             ListTile(
               contentPadding: EdgeInsets.zero,
               leading: const CircleAvatar(
                 radius: 24,
                 backgroundImage: NetworkImage(
-                  'https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png',
+                  'https://images.unsplash.com/photo-1698668768733-7615fbb4ba48?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 ),
               ),
               title: const Text(
@@ -32,14 +36,17 @@ class _HomeViewState extends State<HomeView> {
                 ),
               ),
               subtitle: const Text(
-                'Welcome back!',
+                'Shubham Bane',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               trailing: IconButton(
-                icon: const Icon(Symbols.notifications),
+                icon: Icon(
+                  Symbols.notifications,
+                  color: Colors.green.shade900,
+                ),
                 onPressed: () {},
               ),
             ),
@@ -123,16 +130,17 @@ class _HomeViewState extends State<HomeView> {
       child: ListTile(
         contentPadding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
         title: const Text(
-          'Welcome back!',
+          'Your Balance',
           style: TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w400,
           ),
         ),
         subtitle: const Text(
-          'Welcome back!',
+          '\$156,345.37',
           style: TextStyle(
             fontSize: 20,
+            color: Colors.black,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -152,18 +160,23 @@ class _HomeViewState extends State<HomeView> {
     // Sample product data
     final List<Map<String, dynamic>> products = [
       {
-        'product_image': 'image_url1',
-        'product_name': 'Product 1',
-        'product_price': '\$20.00',
+        'product_image': 'assets/media/plant1.png',
+        'product_name': 'Exelina',
+        'product_price': '\$33.33',
       },
       {
-        'product_image': 'image_url2',
-        'product_name': 'Product 2',
-        'product_price': '\$25.00',
+        'product_image': 'assets/media/plant2.png',
+        'product_name': 'Carolin',
+        'product_price': '\$41.15',
       },
       {
-        'product_image': 'image_url3',
+        'product_image': 'assets/media/plant3.png',
         'product_name': 'Product 3',
+        'product_price': '\$40.00',
+      },
+      {
+        'product_image': 'assets/media/plant4.png',
+        'product_name': 'Product 4',
         'product_price': '\$30.00',
       },
     ];
@@ -175,6 +188,7 @@ class _HomeViewState extends State<HomeView> {
         crossAxisCount: 2,
         mainAxisSpacing: 10,
         crossAxisSpacing: 10,
+        childAspectRatio: 0.8,
       ),
       itemCount: products.length,
       itemBuilder: (context, index) {
@@ -202,42 +216,49 @@ class ProductItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: const Color(0XFFF6F6F6),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Column(
-        children: [
-          Image.network(
-            productImage,
-            height: 120,
-            fit: BoxFit.cover,
-            // https://unsplash.com/photos/green-plant-on-brown-wooden-vase-Ebwp2-6BG8E
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  productName,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  productPrice,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    color: Colors.green,
-                  ),
-                ),
-              ],
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).pushNamed('/product');
+      },
+      child: Container(
+        decoration: BoxDecoration(
+          color: const Color(0XFFF6F6F6),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Image.asset(
+              productImage,
+              height: 165,
+              fit: BoxFit.cover,
             ),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    productName,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    productPrice,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.green,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

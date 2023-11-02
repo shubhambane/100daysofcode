@@ -1,9 +1,9 @@
+import 'package:day12_flutter_plant_shopping/screens/dashboard_view.dart';
+import 'package:day12_flutter_plant_shopping/screens/product_page_view.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:kiosk_mode/kiosk_mode.dart';
-import 'screens/home_view.dart';
 
 void main() {
   runApp(
@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    startKioskMode();
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
@@ -29,7 +28,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => const HomeView(),
+        '/': (context) => const DashboardView(),
+        '/product': (context) => const ProductPage(),
       },
     );
   }
