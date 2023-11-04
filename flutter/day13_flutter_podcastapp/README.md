@@ -1,10 +1,10 @@
-# Day 12: FLutter Plant Shopping App
+# Day 13: FLutter Plant Shopping App
 
-![App Preview](assets/gitImages/day12.png)
+![App Preview](assets/gitImages/day13.png)
 
 ## Project Overview
 
-Welcome to Day 12 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to life an exciting Social Media App. This project is inspired by a fantastic design from [Dribbble](https://dribbble.com). I want to extend my heartfelt thanks to the brilliant designer for the inspiration!
+Welcome to Day 13 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to life an exciting Social Media App. This project is inspired by a fantastic design from [Dribbble](https://dribbble.com). I want to extend my heartfelt thanks to the brilliant designer for the inspiration!
 
 ### App Highlights
 
@@ -12,14 +12,14 @@ Welcome to Day 12 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to li
 
 ### Credits
 
-I'd like to give credit to the amazing design that inspired this project. You can check out the original Dribbble design [here](https://dribbble.com/shots/22860769-Plants-Shop-Mobile-App).
+I'd like to give credit to the amazing design that inspired this project. You can check out the original Dribbble design [here](https://dribbble.com/shots/22971645-Vidsum-AI-Mobile-Apps).
 
 ### How to Run
 
 To explore this project on your local machine, follow these simple steps:
 
 1. Clone this repository: `git clone https://github.com/shubhambane/100daysofcode.git`
-2. Navigate to the project folder: `cd flutter/day12_flutter_plant_shopping`
+2. Navigate to the project folder: `cd flutter/day13_flutter_podcastapp`
 3. Get packages: `flutter pub get`
 3. Run the project: `flutter run`
 
