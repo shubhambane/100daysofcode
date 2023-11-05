@@ -2,13 +2,13 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'screens/speakers_view.dart';
 
 void main() {
   runApp(
     DevicePreview(
       enabled: kDebugMode,
+      defaultDevice: Devices.android.samsungGalaxyS20,
       builder: (context) => const MyApp(),
     ),
   );

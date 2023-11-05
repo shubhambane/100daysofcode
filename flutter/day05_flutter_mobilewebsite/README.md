@@ -9,9 +9,6 @@ Welcome to Day 05 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to li
 ### App Highlights
 
 - **Stunning Design**: The app features a sleek and modern design that captures the essence of social interaction.
-- **User Profiles**: Users can create profiles, customize avatars, and connect with friends.
-- **Feeds & Posts**: Share moments, photos, and stories with friends and followers.
-- **Notifications**: Stay updated with real-time notifications.
 
 ### Credits
 

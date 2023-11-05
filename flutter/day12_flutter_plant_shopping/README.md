@@ -31,7 +31,7 @@ Stay tuned for more exciting projects in the coming days! Follow my #100DaysOfCo
 
 [GitHub Repository](https://github.com/shubhambane/100daysofcode)
 <br>
-[LinkedIn Post](https://www.linkedin.com/in/shubham-bane)
+[LinkedIn](https://www.linkedin.com/in/shubham-bane)
 
 
 ---

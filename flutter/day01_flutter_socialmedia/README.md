@@ -23,7 +23,8 @@ To explore this project on your local machine, follow these simple steps:
 
 1. Clone this repository: `git clone https://github.com/shubhambane/100daysofcode.git`
 2. Navigate to the project folder: `cd flutter/day01_flutter_socialmedia`
-3. Run the project: `flutter run`
+3. Get packages: `flutter pub get`
+4. Run the project: `flutter run`
 
 Feel free to explore the code and provide feedback. Your input is highly appreciated!
 

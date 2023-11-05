@@ -7,6 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(
     DevicePreview(
+      defaultDevice: Devices.android.samsungGalaxyS20,
       enabled: kDebugMode,
       builder: (context) => const MyApp(),
     ),

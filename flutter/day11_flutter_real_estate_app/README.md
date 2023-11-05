@@ -1,10 +1,10 @@
-# Day 09: Flutter Real Estate App
+# Day 11: Flutter Real Estate App
 
 ![App Preview](assets/gitImages/day11.png)
 
 ## Project Overview
 
-Welcome to Day 09 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to life an exciting Social Media App. This project is inspired by a fantastic design from [Dribbble](https://dribbble.com). I want to extend my heartfelt thanks to the brilliant designer for the inspiration!
+Welcome to Day 11 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to life an exciting Social Media App. This project is inspired by a fantastic design from [Dribbble](https://dribbble.com). I want to extend my heartfelt thanks to the brilliant designer for the inspiration!
 
 ### App Highlights
 
@@ -31,7 +31,7 @@ Stay tuned for more exciting projects in the coming days! Follow my #100DaysOfCo
 
 [GitHub Repository](https://github.com/shubhambane/100daysofcode)
 <br>
-[LinkedIn Post](https://www.linkedin.com/in/shubham-bane)
+[LinkedIn](https://www.linkedin.com/in/shubham-bane)
 
 
 ---

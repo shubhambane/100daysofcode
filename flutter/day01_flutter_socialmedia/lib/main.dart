@@ -10,6 +10,7 @@ void main() {
   runApp(
     DevicePreview(
       enabled: kDebugMode,
+      defaultDevice: Devices.android.samsungGalaxyS20,
       builder: (context) => const MyApp(),
     ),
   );

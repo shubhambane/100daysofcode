@@ -23,7 +23,8 @@ To explore this project on your local machine, follow these simple steps:
 
 1. Clone this repository: `git clone https://github.com/shubhambane/100daysofcode.git`
 2. Navigate to the project folder: `cd flutter/day02_flutter_todoandcalendar`
-3. Run the project: `flutter run`
+3. Get packages: `flutter pub get`
+4. Run the project: `flutter run`
 
 Feel free to explore the code and provide feedback. Your input is highly appreciated!
 
@@ -33,7 +34,7 @@ Stay tuned for more exciting projects in the coming days! Follow my #100DaysOfCo
 
 [GitHub Repository](https://github.com/shubhambane/100daysofcode/tree/main/flutter/day02_flutter_todoandcalendar)
 <br>
-[LinkedIn Post](https://www.linkedin.com/in/shubham-bane)
+[LinkedIn](https://www.linkedin.com/in/shubham-bane)
 
 
 ---
