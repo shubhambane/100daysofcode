@@ -1,12 +1,22 @@
-import 'package:day13_flutter_podcastapp/screens/intro_view.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:device_preview/device_preview.dart';
 import 'screens/home_view.dart';
-import 'screens/video_view.dart';
+import 'screens/tips_view.dart';
 
 void main() {
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarIconBrightness: Brightness.dark,
+      statusBarBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.black,
+      systemNavigationBarIconBrightness: Brightness.dark,
+      statusBarColor: Colors.transparent,
+    ),
+  );
   runApp(
     DevicePreview(
       enabled: kDebugMode,
@@ -29,9 +39,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => const IntroView(),
+        '/': (context) => const TipsView(),
         '/home': (context) => const HomeView(),
-        '/video': (context) => const VideoView(),
       },
     );
   }
