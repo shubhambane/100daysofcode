@@ -2,8 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:device_preview/device_preview.dart';
-import 'screens/intro_v1.dart';
-import 'screens/intro_v2.dart';
+import 'screens/home_view.dart';
+import 'screens/profile_view.dart';
 
 void main() {
   runApp(
@@ -22,14 +22,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        fontFamily: GoogleFonts.raleway().fontFamily,
+        fontFamily: GoogleFonts.openSans().fontFamily,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => const IntroVersionOne(),
-        '/intro-v2': (context) => const IntroVersionTwo(),
+        '/': (context) => const HomeView(),
+        '/profile': (context) => const ProfileView(),
       },
     );
   }
