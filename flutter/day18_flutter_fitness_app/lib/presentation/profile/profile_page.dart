@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'profile_goals.dart';
 import 'profile_header.dart';
+import 'profile_settings.dart';
 import 'profile_statistics.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -17,7 +18,9 @@ class ProfilePage extends StatelessWidget {
         title: const Text('Profile'),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/exercise');
+            },
             icon: const Icon(Icons.settings),
           )
         ],
@@ -30,6 +33,7 @@ class ProfilePage extends StatelessWidget {
               ProfileHeader(),
               ProfileStatistics(),
               ProfileGoals(),
+              ProfileSettings(),
             ],
           ),
         ),

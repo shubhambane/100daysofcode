@@ -11,5 +11,10 @@ class UserData {
     startWeight: 71.1,
     goal: 75.0,
     dailyCal: 740.5,
+    lastActivity: '2 days ago',
+    statRun: 'This Year: 109 kilometers',
+    totalRoutes: '7',
+    bestTime: 'Show All',
+    equipment: 'Treadmill: 129.3 km',
   );
 }

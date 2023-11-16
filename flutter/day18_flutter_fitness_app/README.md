@@ -1,16 +1,37 @@
-# day18_flutter_fitness_app
+# Day 18: FLutter Fitness App
 
-A new Flutter project.
+![App Preview](assets/gitImages/day18.png)
 
-## Getting Started
+## Project Overview
 
-This project is a starting point for a Flutter application.
+Welcome to Day 18 of my #100DaysOfCode Challenge! 🚀 Today, I've brought to life an exciting Online lessons app. This project is inspired by a fantastic design from [Dribbble](https://dribbble.com). I want to extend my heartfelt thanks to the brilliant designer for the inspiration!
 
-A few resources to get you started if this is your first Flutter project:
+### App Highlights
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Stunning Design**: The app features a sleek and modern design that captures the essence of social interaction.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Credits
+
+I'd like to give credit to the amazing design that inspired this project. You can check out the original Dribbble design [here](https://dribbble.com/shots/23040815-Fitness-App-Design-Concept).
+
+### How to Run
+
+To explore this project on your local machine, follow these simple steps:
+
+1. Clone this repository: `git clone https://github.com/shubhambane/100daysofcode.git`
+2. Navigate to the project folder: `cd flutter/day18_flutter_fitness_app`
+3. Get packages: `flutter pub get`
+3. Run the project: `flutter run`
+
+Feel free to explore the code and provide feedback. Your input is highly appreciated!
+
+### Stay Tuned
+
+Stay tuned for more exciting projects in the coming days! Follow my #100DaysOfCode journey on [LinkedIn](https://www.linkedin.com/in/shubham-bane) for daily updates and insights. Let's code together and make these 100 days count! 💻✨
+
+[GitHub Repository](https://github.com/shubhambane/100daysofcode)
+<br>
+[LinkedIn](https://www.linkedin.com/in/shubham-bane)
+
+
+---

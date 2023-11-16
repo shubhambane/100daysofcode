@@ -12,7 +12,7 @@ class ProfileStatistics extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(
         top: 8,
-        bottom: 12,
+        bottom: 20,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,3 +1,4 @@
+import 'package:day18_flutter_fitness_app/presentation/exercise/exercise_page.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const ProfilePage(),
+        '/exercise': (context) => const ExercisePage(),
       },
     );
   }
