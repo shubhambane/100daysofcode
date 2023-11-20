@@ -19,7 +19,7 @@ class _HomeViewState extends State<HomeView> {
         padding: const EdgeInsets.symmetric(horizontal: 12),
         child: Column(
           children: [
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             ListTile(
               contentPadding: EdgeInsets.zero,
               leading: const CircleAvatar(

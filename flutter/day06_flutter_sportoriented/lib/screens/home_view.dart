@@ -149,7 +149,8 @@ class ContainerItem extends StatelessWidget {
   final String title;
   final String image;
 
-  ContainerItem({
+  const ContainerItem({
+    super.key,
     required this.title,
     required this.image,
   });

@@ -16,7 +16,7 @@ class ExerciseContent extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           width: double.infinity,
         ),
-        ExerciseDetails(),
+        const ExerciseDetails(),
       ],
     );
   }

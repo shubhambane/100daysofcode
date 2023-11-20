@@ -41,7 +41,7 @@ class IntroVersionTwoState extends State<IntroVersionTwo> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     width: MediaQuery.of(context).size.width * 0.5,
                     child: const Text(
                       softWrap: true,

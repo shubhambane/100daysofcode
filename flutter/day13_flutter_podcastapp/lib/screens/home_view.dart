@@ -129,6 +129,8 @@ class HorizontalAvatarList extends StatelessWidget {
     ),
   ];
 
+  HorizontalAvatarList({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(

@@ -248,7 +248,7 @@ class ProductInfo extends StatelessWidget {
             ),
           ),
           TextSpan(
-            text: '\n${value}',
+            text: '\n$value',
             style: const TextStyle(
               color: Colors.black,
               fontSize: 16,

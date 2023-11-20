@@ -175,10 +175,10 @@ class _GroupExtendedViewState extends State<GroupExtendedView>
               indicatorColor: Colors.blue,
               labelColor: Colors.blue,
               controller: _tabController,
-              tabs: [
-                const Tab(text: 'Upcoming'),
-                const Tab(text: 'Draft'),
-                const Tab(text: 'Past'),
+              tabs: const [
+                Tab(text: 'Upcoming'),
+                Tab(text: 'Draft'),
+                Tab(text: 'Past'),
               ],
             ),
             Expanded(
@@ -250,6 +250,8 @@ class MyEventList extends StatelessWidget {
     }
   ];
 
+  MyEventList({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -279,7 +281,8 @@ class EventItem extends StatelessWidget {
   final String eventDate;
   final String eventTime;
 
-  EventItem({
+  const EventItem({
+    super.key,
     required this.eventName,
     required this.eventDescription,
     required this.eventImage,
@@ -420,34 +423,5 @@ class EventItem extends StatelessWidget {
         ],
       ),
     );
-
-    // Card(
-    //   margin: const EdgeInsets.all(16.0),
-    //   child: Column(
-    //     crossAxisAlignment: CrossAxisAlignment.start,
-    //     children: [
-    //       Image.network(eventImage,
-    //           height: 200, width: double.infinity, fit: BoxFit.cover),
-    //       Padding(
-    //         padding: const EdgeInsets.all(16.0),
-    //         child: Column(
-    //           crossAxisAlignment: CrossAxisAlignment.start,
-    //           children: [
-    //             Text(
-    //               eventName,
-    //               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-    //             ),
-    //             SizedBox(height: 8),
-    //             Text(eventDescription),
-    //             SizedBox(height: 8),
-    //             Text('Location: $eventLocation'),
-    //             Text('Date: $eventDate'),
-    //             Text('Time: $eventTime'),
-    //           ],
-    //         ),
-    //       ),
-    //     ],
-    //   ),
-    // );
   }
 }

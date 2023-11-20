@@ -35,7 +35,7 @@ class _SpeakersViewState extends State<SpeakersView> {
                       fontSize: 32,
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     height: 0,
                     width: 50,
                     child: Stack(

@@ -9,10 +9,10 @@ class ProfileView extends StatefulWidget {
   });
 
   @override
-  _ProfileViewState createState() => _ProfileViewState();
+  ProfileViewState createState() => ProfileViewState();
 }
 
-class _ProfileViewState extends State<ProfileView> {
+class ProfileViewState extends State<ProfileView> {
   String error = "Error Retrieving Data";
   late String instructorProfile;
   late String instructorName;
@@ -141,7 +141,7 @@ class _ProfileViewState extends State<ProfileView> {
                       children: [
                         MyInfoText(
                           title: 'Position',
-                          value: instructorPosition ?? error,
+                          value: instructorPosition,
                         ),
                         Row(
                           children: [

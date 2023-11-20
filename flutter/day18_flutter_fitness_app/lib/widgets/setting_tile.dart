@@ -19,7 +19,7 @@ class SettingTile extends StatelessWidget {
       leading: Icon(icon),
       title: Text(
         title,
-        style: TextStyle(
+        style: const TextStyle(
           fontWeight: FontWeight.bold,
         ),
       ),

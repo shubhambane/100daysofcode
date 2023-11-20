@@ -17,6 +17,8 @@ class VideoSummaryWidget extends StatelessWidget {
     VideoSummary("15:30", "Staying motivated and overcoming challenges"),
   ];
 
+  VideoSummaryWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -38,13 +40,13 @@ class VideoSummaryBlock extends StatefulWidget {
   final String timestamp;
   final String content;
 
-  VideoSummaryBlock(this.timestamp, this.content);
+  const VideoSummaryBlock(this.timestamp, this.content, {super.key});
 
   @override
-  _VideoSummaryBlockState createState() => _VideoSummaryBlockState();
+  VideoSummaryBlockState createState() => VideoSummaryBlockState();
 }
 
-class _VideoSummaryBlockState extends State<VideoSummaryBlock> {
+class VideoSummaryBlockState extends State<VideoSummaryBlock> {
   bool isExpanded = false;
 
   @override
@@ -54,7 +56,7 @@ class _VideoSummaryBlockState extends State<VideoSummaryBlock> {
         ListTile(
           leading: Text(
             widget.timestamp,
-            style: TextStyle(color: Colors.blue),
+            style: const TextStyle(color: Colors.blue),
           ),
           title: Text(widget.content),
           onTap: () {
@@ -64,13 +66,13 @@ class _VideoSummaryBlockState extends State<VideoSummaryBlock> {
           },
         ),
         if (isExpanded)
-          Padding(
+          const Padding(
             padding: EdgeInsets.all(16),
             child: Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut lectus vel dolor vulputate pellentesque. Suspendisse tincidunt arcu vitae purus posuere, a ultricies justo aliquam. Donec sagittis erat odio, a laoreet nisl laoreet non. Integer semper dui sed augue dignissim, eu laoreet sem finibus.",
             ),
           ),
-        Divider(),
+        const Divider(),
       ],
     );
   }
