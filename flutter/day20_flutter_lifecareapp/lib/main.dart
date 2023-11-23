@@ -2,8 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:device_preview/device_preview.dart';
-import 'data/product_repository.dart';
-import 'presentation/home/home_page.dart';
+import 'data/repositories/mood_repository_impl.dart';
+import 'presentation/dashboard/home_page.dart';
 import 'presentation/intro/intro_page.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        fontFamily: GoogleFonts.montserrat().fontFamily,
+        fontFamily: GoogleFonts.openSans().fontFamily,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
@@ -31,9 +31,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const IntroPage(),
         '/home-page': (context) => HomePage(
-              products: ProductRepository().getProducts(),
+              moodRepository: MoodRepositoryImpl(),
             ),
-        // '/product-detail-page': (context) =>  ProductDetailPage(),
       },
     );
   }
